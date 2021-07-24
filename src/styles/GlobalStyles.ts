@@ -11,6 +11,8 @@ export default createGlobalStyle`
 
     --orange-400: #F36225;
 
+    --brown-900: #231F20;
+
     --teal-200:#81BCB8;
     --teal-350: #28A3AA;
   }
@@ -22,10 +24,16 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+
+
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
   }
 
   body {
-   
+   background: var(--white);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -34,8 +42,8 @@ export default createGlobalStyle`
   }
 
   #root {
-    max-height: 100vh;
-    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
   }
 
   button {
