@@ -39,6 +39,10 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 16px 'Open Sans',  sans-serif; 
+    border: 0;
+    background: none;
+    outline: none;
+  
   }
 
   #root {
