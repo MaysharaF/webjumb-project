@@ -36,6 +36,8 @@ export const Search = styled.div`
 
 export const Input = styled.input`
   border: 1px solid var(--brown-900);
+  color: var(--gray-500);
+  padding: 1%;
   width: 75%;
   height: 3rem;
 `;

@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const TopFixedContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: tomato;
   width: 100%;
   height: 20%;
 `;

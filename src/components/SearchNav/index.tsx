@@ -18,7 +18,7 @@ const SearchNav: React.FC = () => {
         <Logo src={LogoImg} />
 
         <Search>
-          <Input />
+          <Input placeholder="Pesquisar..." />
           <ButtonSearch>Buscar</ButtonSearch>
         </Search>
       </Content>
