@@ -7,4 +7,8 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   gap: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;

@@ -49,6 +49,10 @@ export const FilterContainer = styled.div`
   @media only screen and (max-width: 1024px) {
     height: 70%;
   }
+
+  @media only screen and (max-width: 768px) {
+    height: 55%;
+  }
 `;
 
 export const ProductsListContainer = styled.div`
@@ -137,6 +141,10 @@ export const OrdenationType = styled.div`
   @media only screen and (max-width: 1440px) {
     width: 40%;
     font-size: 0.7rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 50%;
   }
 `;
 
