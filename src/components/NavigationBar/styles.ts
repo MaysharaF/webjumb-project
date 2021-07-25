@@ -30,4 +30,9 @@ export const Links = styled(Link)`
   :hover {
     border-bottom: 2px solid var(--white);
   }
+
+  @media only screen and (width: 1440px) {
+    font-size: 0.8rem;
+    margin-right: 4rem;
+  }
 `;

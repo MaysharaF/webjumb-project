@@ -9,7 +9,7 @@ interface IProp {
 
 const NavigationBar: React.FC<IProp> = ({ categories }) => {
   const menus: Categories[] = [
-    { id: 1, name: "Págian Inicial", path: "/" },
+    { id: 1, name: "Página Inicial", path: "/" },
     ...categories.map((category, index) => ({
       ...category,
       id: index + 2,
