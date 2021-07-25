@@ -11,4 +11,8 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media only screen and (max-width: 320px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;

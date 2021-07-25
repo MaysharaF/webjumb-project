@@ -34,6 +34,10 @@ export const Content = styled.div`
   @media only screen and (max-width: 1440px) {
     height: 93%;
   }
+
+  @media only screen and (max-width: 320px) {
+    flex-direction: column;
+  }
 `;
 
 export const FilterContainer = styled.div`
@@ -53,6 +57,10 @@ export const FilterContainer = styled.div`
   @media only screen and (max-width: 768px) {
     height: 55%;
   }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+  }
 `;
 
 export const ProductsListContainer = styled.div`
@@ -60,6 +68,10 @@ export const ProductsListContainer = styled.div`
   flex-direction: column;
   width: 80%;
   height: 100%;
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+  }
 `;
 
 export const Header = styled.div`
@@ -114,6 +126,10 @@ const IconCSS = css`
   :active {
     color: var(--teal-200);
   }
+
+  @media only screen and (max-width: 320px) {
+    display: none;
+  }
 `;
 
 export const PrimaryGrid = styled(Grid)`
@@ -145,6 +161,10 @@ export const OrdenationType = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 50%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
   }
 `;
 
