@@ -91,4 +91,10 @@ export const Links = styled.a`
     border-radius: 8px;
     color: var(--white);
   }
+
+  @media only screen and (width: 1440px) {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 3%;
+  }
 `;
