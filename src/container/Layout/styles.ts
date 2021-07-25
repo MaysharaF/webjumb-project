@@ -21,7 +21,6 @@ export const PageContainer = styled.div`
   overflow-y: scroll;
   width: 100%;
   height: 80%;
-  background: skyblue;
 `;
 
 export const Page = styled.div`
@@ -30,5 +29,4 @@ export const Page = styled.div`
   justify-content: center;
   width: 65%;
   height: 100%;
-  background: steelblue;
 `;

@@ -23,9 +23,8 @@ export const Links = styled.a`
   text-transform: uppercase;
   color: var(--white);
   font-weight: bold;
-  list-style: none;
   margin-right: 7rem;
-  text-decoration: none;
+  transition: ease 0.2s;
 
   :hover {
     border-bottom: 2px solid var(--white);

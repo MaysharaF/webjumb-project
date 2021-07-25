@@ -4,7 +4,7 @@ export default createGlobalStyle`
 :root {
     --white: #FFFFFF;
 
-    --gray-150: #E3DEDA;
+    --gray-150: #E2DEDB;
     --gray-350: #ADADAC;
     --gray-500: #718096;
 
@@ -44,6 +44,11 @@ export default createGlobalStyle`
     background: none;
     outline: none;
   
+  }
+
+  ul, a {
+    list-style: none;
+    text-decoration: none;
   }
 
   #root {
