@@ -8,6 +8,10 @@ export const Container = styled.div`
   width: 100%;
   height: 25%;
   background: var(--red-600);
+
+  @media only screen and (max-width: 320px) {
+    display: none;
+  }
 `;
 
 export const Menu = styled.ul`

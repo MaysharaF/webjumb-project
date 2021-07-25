@@ -12,6 +12,10 @@ export const TopFixedContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 20%;
+
+  @media only screen and (max-width: 320px) {
+    height: 15%;
+  }
 `;
 
 export const PageContainer = styled.div`
@@ -21,6 +25,10 @@ export const PageContainer = styled.div`
   overflow-y: scroll;
   width: 100%;
   height: 80%;
+
+  @media only screen and (max-width: 320px) {
+    height: 85%;
+  }
 `;
 
 export const Page = styled.div`
@@ -36,5 +44,9 @@ export const Page = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 95%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 90%;
   }
 `;

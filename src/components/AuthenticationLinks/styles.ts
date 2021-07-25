@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 100%;
   height: 15%;
   background: var(--brown-900);
+
+  @media only screen and (max-width: 320px) {
+    height: 20%;
+  }
 `;
 
 export const Content = styled.div`
@@ -29,6 +33,11 @@ export const Content = styled.div`
   @media only screen and (max-width: 1024px) {
     width: 95%;
     font-size: 0.7rem;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    justify-content: center;
   }
 `;
 

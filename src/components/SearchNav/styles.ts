@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 100%;
   height: 60%;
   background: var(--white);
+
+  @media only screen and (max-width: 320px) {
+    height: 80%;
+  }
 `;
 
 export const Content = styled.div`
@@ -22,6 +26,11 @@ export const Content = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 95%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    justify-content: center;
   }
 `;
 
@@ -39,6 +48,10 @@ export const Logo = styled.img`
 
   @media only screen and (max-width: 768px) {
     width: 25%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 65%;
   }
 `;
 
@@ -59,6 +72,10 @@ export const Search = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 73%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    display: none;
   }
 `;
 

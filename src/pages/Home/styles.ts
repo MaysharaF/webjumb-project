@@ -29,6 +29,10 @@ export const SideBar = styled.div`
   @media only screen and (max-width: 768px) {
     height: 65%;
   }
+
+  @media only screen and (max-width: 320px) {
+    display: none;
+  }
 `;
 
 export const InfoHome = styled.div`
@@ -40,6 +44,10 @@ export const InfoHome = styled.div`
 
   @media only screen and (max-width: 1024px) {
     width: 80%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
   }
 `;
 
@@ -54,6 +62,10 @@ export const Header = styled.div`
 
   @media only screen and (max-width: 768px) {
     height: 35%;
+  }
+
+  @media only screen and (max-width: 320px) {
+    height: 20%;
   }
 `;
 
@@ -111,9 +123,22 @@ export const Info = styled.div`
     }
 
     p {
-      text-align: justify;
       line-height: 1.1rem;
       font-size: 0.95rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    height: fit-content;
+
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      line-height: 1.1rem;
+      font-size: 0.8rem;
     }
   }
 `;
