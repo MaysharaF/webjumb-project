@@ -1,42 +1,29 @@
 import React from "react";
+import { Categories } from "../../model/categories";
 
 import { Container, Menu, Links } from "./styles";
 
-const NavigationBar: React.FC = () => {
-  const menus = [
-    {
-      id: 1,
-      menu: "Página Inicial",
-      path: "/",
-    },
-    {
-      id: 2,
-      menu: "Camisetas",
-      path: "/catalog",
-    },
-    {
-      id: 3,
-      menu: "Calças",
-      path: "",
-    },
-    {
-      id: 4,
-      menu: "Sapatos",
-      path: "",
-    },
-    {
-      id: 5,
-      menu: "Contato",
-      path: "",
-    },
+interface IProp {
+  categories: Categories[];
+}
+
+const NavigationBar: React.FC<IProp> = ({ categories }) => {
+  const menus: Categories[] = [
+    { id: 1, name: "Págian Inicial", path: "/" },
+    ...categories.map((category, index) => ({
+      ...category,
+      id: index + 2,
+      path: `/catalog/${category.id}`,
+    })),
+    { id: categories.length + 2, name: "Contato", path: "/" },
   ];
 
   return (
     <Container>
       <Menu>
         {menus.map((menu) => (
-          <Links key={menu.id} href={menu.path}>
-            {menu.menu}
+          <Links key={menu.id} to={menu.path}>
+            {menu.name}
           </Links>
         ))}
       </Menu>

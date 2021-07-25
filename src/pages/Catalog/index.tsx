@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { useParams } from "react-router-dom";
+import ContextCategories from "../../contexts/context";
+
 import FilterBox from "../../components/FilterBox";
+
+import { Item as ItemModel } from "../../model/item";
 import ProductsList from "../../container/ProductsList";
+
+import api from "../../services/api";
 
 import {
   Container,
@@ -21,6 +28,21 @@ import {
 } from "./styles";
 
 const Catalog: React.FC = () => {
+  const [item, setItem] = useState<ItemModel[]>([]);
+  const { id } = useParams<{ id: string }>();
+  const { categories } = useContext(ContextCategories);
+
+  useEffect(() => {
+    const fetchItem = async () => {
+      const {
+        data: { items },
+      } = await api.get(`/api/V1/categories/${id}`);
+      setItem(items);
+    };
+
+    fetchItem();
+  }, [id]);
+
   const optionOrder = [
     {
       value: 1,
@@ -48,7 +70,9 @@ const Catalog: React.FC = () => {
 
         <ProductsListContainer>
           <Header>
-            <TitleProductList>Camisetas</TitleProductList>
+            <TitleProductList>
+              {categories?.find((category) => category.id === +id)?.name}
+            </TitleProductList>
             <Ordenation>
               <OrdenationGrid>
                 <PrimaryGrid />
@@ -72,7 +96,7 @@ const Catalog: React.FC = () => {
           </Header>
 
           <ProductListContent>
-            <ProductsList />
+            <ProductsList items={item} />
           </ProductListContent>
         </ProductsListContainer>
       </Content>

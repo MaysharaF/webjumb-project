@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ export const Menu = styled.ul`
   height: 100%;
 `;
 
-export const Links = styled.a`
+export const Links = styled(Link)`
   display: flex;
   cursor: pointer;
   align-items: center;

@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState, Dispatch, SetStateAction } from "react";
 import LogoImg from "../../assets/img/logo.png";
 
 import {
@@ -11,15 +10,32 @@ import {
   ButtonSearch,
 } from "./styles";
 
-const SearchNav: React.FC = () => {
+interface IProps {
+  setFilter: Dispatch<SetStateAction<string | undefined>>;
+}
+
+const SearchNav: React.FC<IProps> = ({ setFilter }) => {
+  const [value, setValue] = useState<string | undefined>(undefined);
+
+  const handleBuscar = () => {
+    setFilter(value);
+  };
   return (
     <Container>
       <Content>
         <Logo src={LogoImg} />
 
         <Search>
-          <Input placeholder="Pesquisar..." />
-          <ButtonSearch>Buscar</ButtonSearch>
+          <Input
+            placeholder="Pesquisar..."
+            onChange={({ target: { value } }) => {
+              setValue(value ? value : undefined);
+              if (!value) {
+                setFilter(undefined);
+              }
+            }}
+          />
+          <ButtonSearch onClick={() => handleBuscar()}>Buscar</ButtonSearch>
         </Search>
       </Content>
     </Container>

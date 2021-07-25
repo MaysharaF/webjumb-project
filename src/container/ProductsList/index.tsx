@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import ContextCategories from "../../contexts/context";
+import { Item } from "../../model/item";
 import CardProduct from "../../components/CardProduct";
 import { Container } from "./styles";
 
-const ProductsList: React.FC = () => {
+interface IProp {
+  items: Item[];
+}
+
+const ProductsList: React.FC<IProp> = ({ items }) => {
+  const { filter } = useContext(ContextCategories);
+
+  useEffect(() => {
+    console.log(filter);
+  }, [filter]);
+
+  const handleFilter = (pattern: any): Item[] => {
+    if (pattern) {
+      return items.filter(function (item) {
+        return item.name.toLowerCase().includes(pattern.toLowerCase());
+      });
+    }
+    return items;
+  };
+
   return (
     <Container>
-      <CardProduct />
+      {handleFilter(filter).map((item) => (
+        <CardProduct item={item} key={item.id} />
+      ))}
     </Container>
   );
 };

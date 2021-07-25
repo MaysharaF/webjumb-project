@@ -1,5 +1,6 @@
 import React from "react";
-import ItemImg from "../../assets/img/shoes-7.jpg";
+import { Item } from "../../model/item";
+import { apiConfig } from "../../config/apiConfig";
 
 import {
   Container,
@@ -11,19 +12,23 @@ import {
   ButtonBuy,
 } from "./styles";
 
-const CardProduct: React.FC = () => {
+interface IProp {
+  item: Item;
+}
+
+const CardProduct: React.FC<IProp> = ({ item }) => {
   return (
     <Container>
       <Content>
         <ImageItem>
-          <Image src={ItemImg} />
+          <Image src={`${apiConfig.baseURL}/${item.image}`} />
         </ImageItem>
 
         <ProductName>
-          <span>Tênis Adidas</span>
+          <span>{item.name}</span>
         </ProductName>
         <Price>
-          <span>R$299,90</span>
+          <span>R${item.price.toFixed(2).replace(".", ",")}</span>
         </Price>
 
         <ButtonBuy>Comprar</ButtonBuy>
