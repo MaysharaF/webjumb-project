@@ -20,12 +20,20 @@ export const Breadcrumb = styled.div`
     font-size: 0.9rem;
     font-weight: 600;
   }
+
+  @media only screen and (max-width: 1440px) {
+    height: 7%;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   width: 100%;
   height: 95%;
+
+  @media only screen and (max-width: 1440px) {
+    height: 93%;
+  }
 `;
 
 export const FilterContainer = styled.div`
@@ -33,6 +41,10 @@ export const FilterContainer = styled.div`
   width: 20%;
   height: 55%;
   margin-right: 2%;
+
+  @media only screen and (max-width: 1440px) {
+    height: 60%;
+  }
 `;
 
 export const ProductsListContainer = styled.div`
@@ -47,6 +59,10 @@ export const Header = styled.div`
   flex-direction: column;
   width: 100%;
   height: 9%;
+
+  @media only screen and (max-width: 1440px) {
+    height: 10%;
+  }
 `;
 
 export const TitleProductList = styled.label`
@@ -57,6 +73,10 @@ export const TitleProductList = styled.label`
   width: 100%;
   height: 50%;
   border-bottom: 1px solid var(--gray-150);
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Ordenation = styled.div`
@@ -109,6 +129,11 @@ export const OrdenationType = styled.div`
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+
+  @media only screen and (max-width: 1440px) {
+    width: 40%;
+    font-size: 0.7rem;
+  }
 `;
 
 export const Select = styled.select`
@@ -123,6 +148,10 @@ export const ProductListContent = styled.div`
   margin-top: 2%;
   width: 100%;
   height: 91%;
+
+  @media only screen and (max-width: 1440px) {
+    height: 90%;
+  }
 `;
 
 export const PaginationContent = styled.div`

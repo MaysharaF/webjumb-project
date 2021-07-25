@@ -14,7 +14,7 @@ export const Title = styled.label`
   height: 10%;
   text-transform: uppercase;
   color: var(--red-600);
-  font-weight: bolder;
+  font-weight: 800;
 `;
 
 export const FilterTags = styled.div`
@@ -41,12 +41,21 @@ export const Links = styled.li`
   :hover {
     color: var(--red-600);
   }
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
 `;
 
 export const TitleTags = styled.label`
   text-transform: uppercase;
   color: var(--teal-200);
   font-weight: bolder;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const ColorBox = styled.div`
@@ -69,6 +78,11 @@ const ColorCSS = css`
   height: 23px;
   margin-right: 5px;
   cursor: pointer;
+
+  @media only screen and (max-width: 1440px) {
+    height: 20px;
+    width: 40px;
+  }
 `;
 
 export const ColorRed = styled.div`

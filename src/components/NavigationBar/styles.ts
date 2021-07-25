@@ -20,6 +20,10 @@ export const Menu = styled.ul`
   width: 65%;
   height: 100%;
 
+  @media only screen and (max-width: 1440px) {
+    width: 70%;
+  }
+
   @media only screen and (max-width: 1024px) {
     width: 95%;
   }
@@ -45,7 +49,7 @@ export const Links = styled(Link)`
   }
 
   @media only screen and (max-width: 1440px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-right: 4rem;
   }
 

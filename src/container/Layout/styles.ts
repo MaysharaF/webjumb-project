@@ -38,6 +38,10 @@ export const Page = styled.div`
   width: 65%;
   height: 100%;
 
+  @media only screen and (max-width: 1440px) {
+    width: 70%;
+  }
+
   @media only screen and (max-width: 1024px) {
     width: 95%;
   }
