@@ -51,6 +51,10 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  li {
+    cursor: pointer;
+  }
+
   #root {
     height: 100vh;
     width: 100vw;

@@ -22,7 +22,7 @@ const Home: React.FC = () => {
     {
       id: 2,
       menu: "Camisetas",
-      path: "",
+      path: "/catalog",
     },
     {
       id: 3,
