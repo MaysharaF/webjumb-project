@@ -55,6 +55,20 @@ export const Info = styled.div`
     text-align: justify;
     font-size: 0.9rem;
   }
+
+  @media only screen and (width: 1440px) {
+    height: 50%;
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export const MenuList = styled.ul`

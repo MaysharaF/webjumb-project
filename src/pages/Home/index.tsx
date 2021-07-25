@@ -48,7 +48,7 @@ const Home: React.FC = () => {
           <MenuList>
             {menus.map((menu) => (
               <Links key={menu.id} href={menu.path}>
-                {menu.menu}
+                • {menu.menu}
               </Links>
             ))}
           </MenuList>
@@ -76,8 +76,7 @@ const Home: React.FC = () => {
               at ultricies eu, facilisis quis ante. Suspendisse id diam turpis.
               Nam semper consequat porta. Nam gravida, leo laoreet lobortis
               posuere, purus nisl cursus erat, nec tristique arcu velit eget
-              nisi. Etiam venenatis venenatis turpis, eu vestibulum lorem
-              pharetra sit amet. In vitae sagittis lectus.
+              nisi.
             </p>
           </Info>
         </InfoHome>
