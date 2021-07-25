@@ -6,9 +6,6 @@ const ProductsList: React.FC = () => {
   return (
     <Container>
       <CardProduct />
-      <CardProduct />
-      <CardProduct />
-      <CardProduct />
     </Container>
   );
 };
