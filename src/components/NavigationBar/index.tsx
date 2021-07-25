@@ -15,7 +15,7 @@ const NavigationBar: React.FC<IProp> = ({ categories }) => {
       id: index + 2,
       path: `/catalog/${category.id}`,
     })),
-    { id: categories.length + 2, name: "Contato", path: "/" },
+    { id: categories.length + 2, name: "Contato", path: "" },
   ];
 
   return (

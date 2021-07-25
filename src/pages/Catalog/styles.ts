@@ -124,3 +124,12 @@ export const ProductListContent = styled.div`
   width: 100%;
   height: 91%;
 `;
+
+export const PaginationContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5%;
+  background: chocolate;
+`;

@@ -32,6 +32,10 @@ export const Search = styled.div`
   justify-content: center;
   width: 40%;
   height: 100%;
+
+  @media only screen and (width: 1440px) {
+    width: 45%;
+  }
 `;
 
 export const Input = styled.input`
@@ -40,6 +44,10 @@ export const Input = styled.input`
   padding: 1%;
   width: 75%;
   height: 3rem;
+
+  @media only screen and (width: 1440px) {
+    height: 2.5rem;
+  }
 `;
 
 export const ButtonSearch = styled.button`
@@ -52,5 +60,9 @@ export const ButtonSearch = styled.button`
 
   :hover {
     filter: brightness(0.9);
+  }
+
+  @media only screen and (width: 1440px) {
+    height: 2.5rem;
   }
 `;

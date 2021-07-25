@@ -16,15 +16,19 @@ export const Content = styled.div`
   width: 65%;
   height: 100%;
   color: var(--white);
+  font-size: 0.9rem;
 
   span {
     margin: 0 5px 0 5px;
+  }
+
+  @media only screen and (width: 1440px) {
+    font-size: 0.8rem;
   }
 `;
 
 export const Links = styled.a`
   cursor: pointer;
-  font-size: 0.9rem;
   font-weight: bold;
   text-decoration: underline;
 

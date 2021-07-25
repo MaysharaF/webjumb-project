@@ -11,7 +11,6 @@ import ContextCategories from "../../contexts/context";
 import { Container, TopFixedContainer, PageContainer, Page } from "./styles";
 
 const Layout: React.FC = ({ children }) => {
-  const [loading, setLoading] = useState<boolean>(true);
   const [categories, setCategories] = useState<Categories[]>([]);
   const [filter, setFilter] = useState<string | undefined>(undefined);
 
@@ -21,7 +20,6 @@ const Layout: React.FC = ({ children }) => {
         data: { items },
       } = await api.get("/api/V1/categories/list");
       setCategories(items);
-      setLoading(false);
     };
 
     fetchCategories();
