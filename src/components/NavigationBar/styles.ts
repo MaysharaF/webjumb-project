@@ -19,6 +19,11 @@ export const Menu = styled.ul`
   @media only screen and (max-width: 1024px) {
     width: 95%;
   }
+
+  @media only screen and (max-width: 768px) {
+    justify-content: space-between;
+    width: 95%;
+  }
 `;
 
 export const Links = styled(Link)`
@@ -43,5 +48,9 @@ export const Links = styled(Link)`
   @media only screen and (max-width: 1024px) {
     font-size: 0.9rem;
     margin-right: 4rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin: 0rem;
   }
 `;

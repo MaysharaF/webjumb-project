@@ -25,6 +25,10 @@ export const SideBar = styled.div`
   @media only screen and (max-width: 1024px) {
     width: 20%;
   }
+
+  @media only screen and (max-width: 768px) {
+    height: 65%;
+  }
 `;
 
 export const InfoHome = styled.div`
@@ -46,6 +50,10 @@ export const Header = styled.div`
 
   @media only screen and (max-width: 1024px) {
     height: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 35%;
   }
 `;
 
@@ -92,6 +100,20 @@ export const Info = styled.div`
     p {
       font-size: 0.75rem;
       line-height: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 65%;
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.1rem;
+      font-size: 0.95rem;
     }
   }
 `;
