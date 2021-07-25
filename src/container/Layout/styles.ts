@@ -29,4 +29,8 @@ export const Page = styled.div`
   justify-content: center;
   width: 65%;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 95%;
+  }
 `;

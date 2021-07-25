@@ -15,6 +15,10 @@ export const Content = styled.div`
   justify-content: space-between;
   width: 65%;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 95%;
+  }
 `;
 
 export const Logo = styled.img`
@@ -24,6 +28,10 @@ export const Logo = styled.img`
   object-fit: contain;
   width: 20%;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 15%;
+  }
 `;
 
 export const Search = styled.div`
@@ -33,20 +41,28 @@ export const Search = styled.div`
   width: 40%;
   height: 100%;
 
-  @media only screen and (width: 1440px) {
+  @media only screen and (max-width: 1440px) {
     width: 45%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 50%;
   }
 `;
 
 export const Input = styled.input`
-  border: 1px solid var(--brown-900);
+  border: 1px solid var(--gray-500);
   color: var(--gray-500);
   padding: 1%;
   width: 75%;
   height: 3rem;
 
-  @media only screen and (width: 1440px) {
+  @media only screen and (max-width: 1440px) {
     height: 2.5rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    height: 2.3rem;
   }
 `;
 
@@ -64,5 +80,9 @@ export const ButtonSearch = styled.button`
 
   @media only screen and (width: 1440px) {
     height: 2.5rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    height: 2.3rem;
   }
 `;

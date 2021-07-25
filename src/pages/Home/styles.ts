@@ -21,6 +21,10 @@ export const SideBar = styled.div`
   height: 100%;
   background: var(--gray-150);
   margin-right: 2%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 20%;
+  }
 `;
 
 export const InfoHome = styled.div`
@@ -29,12 +33,20 @@ export const InfoHome = styled.div`
   align-items: center;
   width: 77%;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 80%;
+  }
 `;
 
 export const Header = styled.div`
   width: 100%;
   height: 55%;
   background: var(--gray-350);
+
+  @media only screen and (max-width: 1024px) {
+    height: 50%;
+  }
 `;
 
 export const Info = styled.div`
@@ -65,8 +77,21 @@ export const Info = styled.div`
     }
 
     p {
-      text-align: justify;
       font-size: 0.75rem;
+    }
+  }
+
+  @media only screen and (width: 1024px) {
+    height: 50%;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1rem;
     }
   }
 `;
@@ -92,7 +117,13 @@ export const Links = styled.a`
     color: var(--white);
   }
 
-  @media only screen and (width: 1440px) {
+  @media only screen and (max-width: 1440px) {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 3%;
+  }
+
+  @media only screen and (max-width: 1024px) {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     padding: 3%;

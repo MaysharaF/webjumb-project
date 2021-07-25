@@ -22,8 +22,13 @@ export const Content = styled.div`
     margin: 0 5px 0 5px;
   }
 
-  @media only screen and (width: 1440px) {
+  @media only screen and (max-width: 1440px) {
     font-size: 0.8rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 95%;
+    font-size: 0.7rem;
   }
 `;
 

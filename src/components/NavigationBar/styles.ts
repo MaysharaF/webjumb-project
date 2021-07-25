@@ -15,6 +15,10 @@ export const Menu = styled.ul`
   align-items: center;
   width: 65%;
   height: 100%;
+
+  @media only screen and (max-width: 1024px) {
+    width: 95%;
+  }
 `;
 
 export const Links = styled(Link)`
@@ -31,8 +35,13 @@ export const Links = styled(Link)`
     border-bottom: 2px solid var(--white);
   }
 
-  @media only screen and (width: 1440px) {
+  @media only screen and (max-width: 1440px) {
     font-size: 0.8rem;
+    margin-right: 4rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 0.9rem;
     margin-right: 4rem;
   }
 `;
