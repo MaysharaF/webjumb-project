@@ -45,6 +45,10 @@ export const FilterContainer = styled.div`
   @media only screen and (max-width: 1440px) {
     height: 60%;
   }
+
+  @media only screen and (max-width: 1024px) {
+    height: 70%;
+  }
 `;
 
 export const ProductsListContainer = styled.div`

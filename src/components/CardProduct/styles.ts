@@ -21,6 +21,10 @@ export const ImageItem = styled.div`
   height: 68%;
   padding: 5%;
   border: 1px solid var(--gray-150);
+
+  @media only screen and (max-width: 1440px) {
+    height: 60%;
+  }
 `;
 
 export const Image = styled.img`
@@ -45,6 +49,14 @@ export const ProductName = styled.div`
     font-weight: 400;
     font-size: 0.9rem;
     color: var(--gray-500);
+  }
+
+  @media only screen and (max-width: 1440px) {
+    height: 15%;
+    span {
+      font-size: 0.8rem;
+      text-align: center;
+    }
   }
 `;
 
