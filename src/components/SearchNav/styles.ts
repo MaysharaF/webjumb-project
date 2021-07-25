@@ -46,7 +46,7 @@ export const ButtonSearch = styled.button`
   background: var(--red-600);
   color: var(--white);
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 800;
   width: 25%;
   height: 3rem;
 
