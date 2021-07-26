@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/webjumb-project/static/js/main.9242f91a.chunk.js",
-    "main.js.map": "/webjumb-project/static/js/main.9242f91a.chunk.js.map",
+    "main.js": "/webjumb-project/static/js/main.2ee2282e.chunk.js",
+    "main.js.map": "/webjumb-project/static/js/main.2ee2282e.chunk.js.map",
     "runtime-main.js": "/webjumb-project/static/js/runtime-main.1ace78f7.js",
     "runtime-main.js.map": "/webjumb-project/static/js/runtime-main.1ace78f7.js.map",
     "static/js/2.5b183d4d.chunk.js": "/webjumb-project/static/js/2.5b183d4d.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.1ace78f7.js",
     "static/js/2.5b183d4d.chunk.js",
-    "static/js/main.9242f91a.chunk.js"
+    "static/js/main.2ee2282e.chunk.js"
   ]
 }
